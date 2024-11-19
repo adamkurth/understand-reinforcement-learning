@@ -5,9 +5,10 @@ import torch.nn.functional as F
 import os
 
 """
-    Coded by Adam Kurth
-    Reference Tutorial: https://youtu.be/L8ypSXwyBds?si=h-6_idN4Wwsg_kSf
+Coded by Adam Kurth
+Reference Tutorial: https://youtu.be/L8ypSXwyBds?si=h-6_idN4Wwsg_kSf
 """
+
 class Linear_QNet(nn.Module):
     def __init__(self, input_size, hidden_size, output_size):
         super().__init__() #inherit from nn.Module

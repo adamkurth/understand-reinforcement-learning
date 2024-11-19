@@ -1,8 +1,8 @@
 
 """
-    Coded by Adam Kurth
-    Reference Tutorial: https://youtu.be/L8ypSXwyBds?si=h-6_idN4Wwsg_kSf
-    
+Coded by Adam Kurth
+Reference Tutorial: https://youtu.be/L8ypSXwyBds?si=h-6_idN4Wwsg_kSf
+
 Context: This file contains the implementation of the snake game.
 This file contains the implementation of a reinforcement deep neural network for the snake game. 
 The network uses deep Q learning, where the q value represents the quality of an action. 
@@ -37,7 +37,6 @@ BATCH_SIZE = 1000    # mini batch size for sampling
 LR = 0.001           # learning rate
 
 class Agent:
-    
     def __init__(self):
         self.n_games = 0
         self.epsilon = 0  # control randomness
@@ -62,7 +61,7 @@ class Agent:
         state = [
             #Dagner straight
             # checking in every direction whether the point that we made will hit the boundary of the game. 
-            (dir_r and game.is_collision(point_r)) or
+            (dir_r and game.is_collision(point_r)) or 
             (dir_l and game.is_collision(point_l)) or
             (dir_u and game.is_collision(point_u)) or
             (dir_d and game.is_collision(point_d)),
